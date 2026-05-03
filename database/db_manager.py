@@ -4,7 +4,7 @@ import os
 class GestorFavoritos:
     def __init__(self):
 
-        os.mkdirs("database", exist_ok=True)
+        os.makedirs("database", exist_ok=True)
 
         self.conexion = sqlite3.connect("database/mangas.db")
         self.cursor = self.conexion.cursor()
