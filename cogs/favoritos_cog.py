@@ -37,6 +37,16 @@ class FavoritosCog(commands.Cog):
 
         embed.description = lista_formateada if lista_formateada else "No has agregado nada aun."
         await ctx.send(embed=embed)
+    
+    @commands.command(name="borrar")
+    async def borrar_mangas(self, ctx, *, nombre_manga):
+        id_usuario = ctx.author.id
+        exito = db.eliminar_manga(id_usuario, nombre_manga)
+        print(exito)
+        if exito:
+            await ctx.send(f"{ctx.author.name}, has eliminado el manga: {nombre_manga} de tu lista de favoritos.")
+        else:
+            await ctx.send(f"No tienes {nombre_manga} en tu lista de favoritos.")
 
 async def setup(bot):
     print("Cargando el modulo de favoritos.")

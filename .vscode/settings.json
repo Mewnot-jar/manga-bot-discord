@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "MangaDB",
+            "database": ".database/mangas.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
