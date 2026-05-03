@@ -20,6 +20,8 @@ async def on_ready():
 async def main():
     async with bot:
         await bot.load_extension('cogs.manga_cog')
+        await bot.load_extension('cogs.favoritos_cog')
+        
         await bot.start(TOKEN)
 
 @bot.command()
