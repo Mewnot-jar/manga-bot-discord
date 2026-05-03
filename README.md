@@ -1,5 +1,7 @@
 # 📖 Manga Discord Bot
 
+![Estado: En Desarrollo](https://img.shields.io/badge/Estado-En%20Desarrollo-orange)
+
 Un bot de Discord desarrollado en Python que permite buscar información de mangas en tiempo real utilizando la API de Jikan (MyAnimeList), además de gestionar una biblioteca personal de favoritos para cada usuario. El bot extrae datos, traduce las sinopsis automáticamente al español y utiliza una base de datos local para almacenar tus lecturas de forma permanente.
 
 ## ✨ Características Principales
